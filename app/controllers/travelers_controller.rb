@@ -4,7 +4,7 @@ class TravelersController < ApplicationController
     end
 
     def authenticate
-        # ?
+       # ?
     end
 
     def show

@@ -1,7 +1,7 @@
 # Auth Lecture Assessments
 
 Before all assessments, run `rails s` in your terminal to start the rails app.
-Test in the browser by going to http://localhost:3000/travelers/login
+Test in the browser by going to http://localhost:3000/login
 
 
 ### Assessment 1: Secure Passwords
@@ -14,6 +14,7 @@ Test in the browser by going to http://localhost:3000/travelers/login
 ### Assessment 2: Authentication
 
 * Handle form submission from the `login` view in the `travelers_controller`:
+  * \* you may have to add some routes
   * Find a traveler with the username the user provided
   * Use the "authenticate" method to check if the user provided the correct password for that traveler
   * If they did, save the travelers ID in the session

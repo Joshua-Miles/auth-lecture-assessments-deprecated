@@ -28,9 +28,11 @@ class TicketsController < ApplicationController
     end
     
     def destroy
+        # ?
         @ticket = Ticket.find(params[:id])
         @ticket.destroy
-        redirect_to tickets_path
+        redirect_to "/travelers/#{@ticket.traveler.id}"
+        # ?
     end
     
     def ticket_params

@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 2019_06_09_211528) do
 
   create_table "travelers", force: :cascade do |t|
     t.string "name"
+    t.string "username"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

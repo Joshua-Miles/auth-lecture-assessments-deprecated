@@ -5,10 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+Ticket.destroy_all
 Airline.destroy_all
 Traveler.destroy_all
-Ticket.destroy_all
 
 [
     "United",
@@ -19,10 +18,10 @@ Ticket.destroy_all
 end
 
 [
-    { name: 'Roy', password: '1234' },
-    { name: 'Kurtis', password: '5678' },
-    { name: 'Feven', password: '9101' },
-    { name: 'Jason', password: '1121'}
+    { username: 'Roy', password: '1234' },
+    { username: 'Kurtis', password: '5678' },
+    { username: 'Feven', password: '9101' },
+    { username: 'Jason', password: '1121'}
 ].each do | traveler_attributes |
     # Same as: Traveler.create(name: name)
     traveler = Traveler.new(traveler_attributes)
