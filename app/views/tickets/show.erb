@@ -1,0 +1,4 @@
+<h1>Ticket</h1>
+<p>Traveler: <%= @ticket.traveler.name %></p>
+<p>Airline: <%= @ticket.airline.name %></p>
+<%= link_to :delete, "/tickets/#{@ticket.id}", method: :delete %>

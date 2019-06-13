@@ -1,0 +1,7 @@
+<h1><%= @traveler.name %></h1>
+<h3>Tickets:</h3>
+<ul>
+<% @traveler.tickets.each do | ticket | %>
+    <li>Ticket with: <%= ticket.airline.name %></li>
+<% end %>
+</ul> 
